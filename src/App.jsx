@@ -4,6 +4,7 @@ import "./App.css";
 import useStore from "./store/store";
 import Socket from "./socket";
 import { useEffect } from "react";
+import { ChatComponent } from "./n8n";
 
 function App() {
   const bears = useStore((state) => state.bears);
@@ -38,6 +39,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <ChatComponent />
     </>
   );
 }
